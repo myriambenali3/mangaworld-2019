@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/listerMangas', 'MangaController@getMangas');
+
+Route::get('/ajouter-genre', 'GenreController@ajoutGenre');
+
+Route::post('/ajouter-genre', 'GenreController@postAjoutGenre');
